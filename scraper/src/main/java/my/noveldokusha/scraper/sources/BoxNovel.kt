@@ -24,9 +24,9 @@ class BoxNovel(
 ) : SourceInterface.Catalog {
     override val id = "box_novel"
     override val nameStrId = R.string.source_name_box_novel
-    override val baseUrl = "https://boxnovel.com/"
-    override val catalogUrl = "https://boxnovel.com/novel/?m_orderby=alphabet"
-    override val iconUrl = "https://boxnovel.com/wp-content/uploads/2018/04/box-icon-150x150.png"
+    override val baseUrl = "https://novgo.co/"
+    override val catalogUrl = "https://novgo.co/novel/?m_orderby=alphabet"
+    override val iconUrl = "https://novgo.co/wp-content/uploads/2018/04/box-icon-150x150.png"
     override val language = LanguageCode.ENGLISH
 
     override suspend fun getBookCoverImageUrl(
