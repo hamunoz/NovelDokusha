@@ -26,8 +26,8 @@ class MTLNovel(
 ) : SourceInterface.Catalog {
     override val id = "mtlnovel"
     override val nameStrId = R.string.source_name_mtlnovel
-    override val baseUrl = "https://www.mtlnovel.com/"
-    override val catalogUrl = "https://www.mtlnovel.com/alltime-rank/"
+    override val baseUrl = "https://www.mtlnovels.com/"
+    override val catalogUrl = "https://www.mtlnovels.com/alltime-rank/"
     override val language = LanguageCode.ENGLISH
 
     override suspend fun getChapterTitle(doc: Document): String? = null
@@ -98,7 +98,7 @@ class MTLNovel(
                     BookResult(
                         title = link.attr("aria-label"),
                         url = link.attr("href"),
-                        coverImageUrl = it.selectFirst("amp-img[src]")?.attr("src") ?: ""
+                        coverImageUrl = it.selectFirst("amp-img")?.attr("src") ?: ""
                     )
                 }
                 .let {
@@ -122,11 +122,11 @@ class MTLNovel(
             if (input.isBlank() || index > 0)
                 return@tryConnect PagedList.createEmpty(index = index)
 
-            val url = """https://www.mtlnovel.com/wp-admin/admin-ajax.php"""
+            val url = """https://www.mtlnovels.com/wp-admin/admin-ajax.php"""
                 .toUrlBuilderSafe()
                 .add("action", "autosuggest")
                 .add("q", input)
-                .add("__amp_source_origin", "https://www.mtlnovel.com")
+                .add("__amp_source_origin", "https://www.mtlnovels.com")
                 .toString()
 
             val request = getRequest(url)
