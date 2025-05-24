@@ -21,18 +21,6 @@ Copyright © 2023, [nani](https://github.com/nanihadesuka), Released under [GPL-
       - Adjust voice, pitch, speed
       - Save your preferred voices
 
-  
-## Screenshots
- 
-|              Library               |                Finder                |
-|:----------------------------------:|:------------------------------------:|
-|    ![](screenshots/library.png)    |     ![](screenshots/finder.png)      |
-|             Book info              |            Book chapters             |
-|   ![](screenshots/book_info.png)   |  ![](screenshots/book_chapers.png)   |
-|               Reader               |           Database search            |
-|    ![](screenshots/reader.png)     | ![](screenshots/database_search.png) |
-|           Global search            |                                      |
-| ![](screenshots/global_search.png) |                                      |
 
 ## Tech stack
   - Kotlin
