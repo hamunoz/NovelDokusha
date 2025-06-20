@@ -102,7 +102,10 @@ class MTLNovel(
                     BookResult(
                         title = link.attr("aria-label"),
                         url = link.attr("href"),
-                        coverImageUrl = it.selectFirst("amp-img")?.attr("src") ?: ""
+                        coverImageUrl = it.selectFirst("amp-img")?.attr("src")?.replace(
+    "www.mtlnovel.net",
+    "www.mtlnovels.com/wp-content/uploads"
+) ?: ""
                     )
                 }
                 .let {
