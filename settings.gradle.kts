@@ -13,7 +13,7 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         //noinspection JcenterRepositoryObsolete
-        jcenter()
+        //jcenter()
         maven { setUrl("https://jitpack.io") }
     }
 }

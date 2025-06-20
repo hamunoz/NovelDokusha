@@ -31,8 +31,7 @@ class LightNovelsTranslations(
     override val nameStrId = R.string.source_name_light_novel_translations
     override val baseUrl = "https://lightnovelstranslations.com/"
     override val catalogUrl = "https://lightnovelstranslations.com/"
-    override val iconUrl =
-        "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/458169/797a2e9b03094435947635c4da0fc683/eyJ3IjoyMDB9/1.jpeg?token-time=2145916800&token-hash=2gkkI3EgQqRPh5dQe9uxrULjURfQVm60BHKUdh91MtE%3D"
+    override val iconUrl ="https://i0.wp.com/lightnovelstranslations.com/wp-content/uploads/2020/12/cropped-favicon-32px.png"
     override val language = LanguageCode.ENGLISH
 
     override suspend fun getBookCoverImageUrl(

@@ -20,19 +20,18 @@ import org.jsoup.nodes.Document
 
 /**
  * Novel main page (chapter list) example:
- * https://www.lightnovelworld.com/novel/the-devil-does-not-need-to-be-defeated
+ * https://www.lightnovelworld.co/novel/the-devil-does-not-need-to-be-defeated
  * Chapter url example:
- * https://www.lightnovelworld.com/novel/the-devil-does-not-need-to-be-defeated/1348-chapter-0
+ * https://www.lightnovelworld.co/novel/the-devil-does-not-need-to-be-defeated/1348-chapter-0
  */
 class LightNovelWorld(
     private val networkClient: NetworkClient
 ) : SourceInterface.Catalog {
     override val id = "light_novel_world"
     override val nameStrId = R.string.source_name_light_novel_world
-    override val baseUrl = "https://www.lightnovelworld.com/"
-    override val catalogUrl = "https://www.lightnovelworld.com/genre/all/popular/all/"
-    override val iconUrl =
-        "https://static.lightnovelworld.com/content/img/lightnovelworld/favicon.png"
+    override val baseUrl = "https://www.lightnovelworld.co/"
+    override val catalogUrl = "https://www.lightnovelworld.co/genre/all/popular/all/"
+    override val iconUrl = "https://static.lightnovelworld.co/content/img/lightnovelworld/favicon.png"
     override val language = LanguageCode.ENGLISH
 
     override suspend fun getChapterText(doc: Document): String = withContext(Dispatchers.Default) {
